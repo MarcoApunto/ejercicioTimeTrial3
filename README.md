@@ -1,5 +1,7 @@
 # Ejercicio Time Trial 3
 
+## [Enunciado](./ENUNCIADO.md)
+
 ## Para su ejecución:
 
 Clonar el repositorio
