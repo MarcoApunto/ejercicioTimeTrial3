@@ -1,5 +1,7 @@
 # Ejercicio Time Trial 3
 
+## [Tiempo transcurrido](https://imgur.com/a/jmUS2e2)
+
 ## [Enunciado](./ENUNCIADO.md)
 
 ### Lógica ejecutada
