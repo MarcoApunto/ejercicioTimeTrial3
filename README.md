@@ -2,6 +2,16 @@
 
 ## [Enunciado](./ENUNCIADO.md)
 
+### Lógica ejecutada
+
+Al pedir elementos pares e impares, se **filtra** dichos elementos por índices y se les asigna un índice adecuado para su uso según el **estado**. Este estado se cambia al pulsar un botón, con lo que redenrizará con otros elementos según la condición puesta en el filtrado.
+
+### Warnings a tener en cuenta
+
+WARNING in [eslint] 
+src/App.js
+  Line 9:44:  Shadowing of global property 'undefined'  no-shadow-restricted-names
+
 ## Para su ejecución:
 
 Clonar el repositorio

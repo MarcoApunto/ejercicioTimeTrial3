@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isEven, setIsEven] = useState(true);
+
+	const liContent = ['Home', 'Photos', 'Videos', 'Contacts']
+
+	const filteredContent = liContent.filter((undefined, i) => (
+		isEven ? (i + 1) % 2 === 0 : (i + 1) % 2 !== 0)
+	)
+
+	const handleClick = () => { setIsEven(!isEven) }
+
+	return (
+		<div>
+			<header>
+				<h1
+				style={{ color: isEven ? "blue" : "green" }}>
+					Este es el título principal del sitio web
+				</h1>
+			</header>
+			<nav>
+				<ul>
+					{filteredContent.map((elem, index) => (
+						<li
+						key={index}>
+							{elem}
+						</li>
+					))}
+				</ul>
+				<button
+				onClick={handleClick}>
+					Mostrar elmentos {isEven ? 'impares' : 'pares'}
+				</button>
+				<p>
+					Mostrando elementos {isEven ? 'pares' : 'impares'}
+				</p>
+			</nav>
+		</div >
+	);
 }
 
 export default App;
